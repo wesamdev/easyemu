@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Easyemu: Emulator</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div id="neutralinoapp">
-      <h1>Easyemu</h1>
-
-      <img src="./icons/logo.gif" alt="Neutralinojs" />
-      <div>
-        <a href="#" onclick="openDocs();">Docs</a> &middot;  
-        <a href="#" onclick="openTutorial();">Video tutorial</a>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Easyemu: Emulator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+  <div id="neutralinoapp" class="container mx-auto p-8">
+    <h1 class="text-4xl mb-8">Easyemu</h1>
+    <div id="gameButtons" class="flex flex-wrap gap-4">
+      <!-- Buttons for launching games will be added here -->
     </div>
-    <!-- Neutralino.js client. This file is gitignored, 
-        because `neu update` typically downloads it.
-        Avoid copy-pasting it. 
-        -->
-    <script src="js/neutralino.js"></script>
-    <!-- Your app's source files -->
-    <script src="js/app.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+  <script src="js/neutralino.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
 </html>
