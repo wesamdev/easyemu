@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let rawBin = new ArrayBuffer(1);
         let view = new Uint8Array(rawBin);      
         view[0] = 64; // Saves ASCII '@' to the binary file
-        let data = await Neutralino.filesystem.readBinaryFile(NL_PATH + rompath);
+        let data = await Neutralino.filesystem.readBinaryFile(rompath);
         romdata = new Uint8Array(data);
         console.log('Binary content: ', view);
 
