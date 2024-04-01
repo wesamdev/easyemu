@@ -1,3 +1,5 @@
 # easyemu
- Desktop web based Emulator based on Neutralinojs and EmulatorJS 
+
+Desktop web based Emulator based on Electron and EmulatorJS
+
 ## Under development 🚧
