@@ -65,16 +65,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var  rompath = 'roms/' + system + '/' + EJS_gameUrl;
         console.log(rompath);
-        let rawBin = new ArrayBuffer(1);
-        let view = new Uint8Array(rawBin);      
-        view[0] = 64; // Saves ASCII '@' to the binary file
-        let data = await Neutralino.filesystem.readBinaryFile(rompath);
-        romdata = new Uint8Array(data);
-        console.log('Binary content: ', view);
+        // let rawBin = new ArrayBuffer(1);
+        // let view = new Uint8Array(rawBin);      
+        // view[0] = 64; // Saves ASCII '@' to the binary file
+        // let data = await Neutralino.filesystem.readBinaryFile(rompath);
+        // romdata = new Uint8Array(data);
+        // console.log('Binary content: ', view);
 
-        const emulatorPageUrl = `emu.html?core=${EJS_core}&game=${romdata}&pathtodata=${EJS_pathtodata}&gamename=${EJS_gameName}`;
+        const emulatorPageUrl = `/emu.html?core=${EJS_core}&game=${rompath}&pathtodata=${EJS_pathtodata}&gamename=${EJS_gameName}`;
+        console.log(emulatorPageUrl);
         // get neutralino server url
-        window.location.href  = emulatorPageUrl;
+        // window.location.href  = emulatorPageUrl;
           
         // Create the emulator page URL
 
