@@ -1,11 +1,4 @@
 //main.js
-function openDocs() {
-    Neutralino.os.open("https://neutralino.js.org/docs");
-}
-
-function openTutorial() {
-    Neutralino.os.open("https://www.youtube.com/c/CodeZri");
-}
 
 function setTray() {
     if(NL_MODE != "window") {
