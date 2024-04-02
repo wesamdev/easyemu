@@ -1,5 +1,5 @@
 # easyemu
 
-Desktop web based Emulator based on Electron and EmulatorJS
+Desktop web based Emulator based on Electron.
 
 ## Under development 🚧
